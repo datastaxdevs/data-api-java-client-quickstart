@@ -1,29 +1,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.datastax.quickstart</groupId>
-  <artifactId>quickstart-java-client</artifactId>
+  <artifactId>data-api-java-client-quickstart</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>data-api-java-client-quickstart</name>
-  <url>http://maven.apache.org</url>
-
-  <properties>
-    <maven.plugin.compiler.source>17</maven.plugin.compiler.source>
-    <maven.plugin.compiler.target>17</maven.plugin.compiler.target>
-  </properties>
 
   <dependencies>
     <dependency>
       <groupId>com.datastax.astra</groupId>
       <artifactId>astra-db-java</artifactId>
-      <version>2.0.0-SNAPSHOT</version>
+      <version>2.0.0-PREVIEW</version>
     </dependency>
   </dependencies>
 
   <build>
     <plugins>
-
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -31,7 +24,6 @@
         <configuration>
           <source>21</source>
           <target>21</target>
-          <showWarnings>false</showWarnings>
         </configuration>
       </plugin>
     </plugins>
